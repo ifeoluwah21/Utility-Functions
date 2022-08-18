@@ -1,0 +1,25 @@
+{
+  "name": "helper-utility-functions",
+  "version": "1.0.0",
+  "description": "Pure abstracted utility functions for arrays, objects and other use case",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "vitest --run --reporter verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifeoluwah21/Utility-Functions.git"
+  },
+  "author": "Ifeoluwa Oludare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifeoluwah21/Utility-Functions/issues"
+  },
+  "homepage": "https://github.com/ifeoluwah21/Utility-Functions#readme",
+  "devDependencies": {
+    "vitest": "^0.22.1"
+  }
+}
