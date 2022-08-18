@@ -1,6 +1,7 @@
 {
   "name": "helper-utility-functions",
   "version": "1.0.0",
+  "type": "module",
   "description": "Pure abstracted utility functions for arrays, objects and other use case",
   "main": "app.js",
   "directories": {
