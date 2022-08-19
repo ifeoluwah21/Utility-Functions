@@ -90,3 +90,14 @@ export function reduce(array, callback, initialValue) {
 
     return accumulator;
 }
+
+//Works like the find method in the Array prototype
+export function find(array, callback) {
+    //Check the that the first argument is an array and the second argument is a callback function.
+    arrayAndCallbackCheck(array, callback);
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i], i, array)) {
+            return array[i];
+        }
+    }
+}

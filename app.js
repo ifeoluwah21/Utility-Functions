@@ -1,10 +1,23 @@
-import { reduce } from "./arrayFn.js";
-import { partial } from "./utilsFn.js"
+import { find } from "./arrayFn.js";
+import { oddNumberChecker, evenNumberCheck } from "./utilsFn.js"
+import { objectKeys, objectValues, objectEntries } from "./objectFn.js"
 
+console.log(evenNumberCheck(19))
 
-function multiple(x, y, z) {
-    return x * y * z
+const obj1 = {
+    name: "ifeoluwah"
 }
 
-let result = partial(multiple)(1, undefined, 3)(4)
-console.log(result)
+const obj2 = {
+    name: "Motunrayo",
+    dept: "AGE",
+    age: 20
+}
+
+const obj3 = {
+    age: 18
+}
+
+console.log(objectKeys(obj2))
+console.log(objectValues(obj2))
+console.log(objectEntries(obj2))

@@ -73,3 +73,20 @@ export function pipe(...fns) {
         }, data)
     }
 }
+
+export function primeNumberCheck(num) {
+    let checker = true;
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return (checker = false, checker)
+        }
+    }
+    return checker
+}
+
+export function evenNumberCheck(num) {
+    return num % 2 === 0 ? true : false;
+}
+export function oddNumberChecker(num) {
+    return num % 2 === 0 ? false : true;
+}
