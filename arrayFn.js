@@ -14,7 +14,7 @@ function arrayAndCallbackCheck(array, callback) {
 
 //Works like the forEach method in the Array prototype
 
-export function forEach(array, callback) {
+function forEach(array, callback) {
     //Check the that the first argument is an array and the second argument is a callback function.
     arrayAndCallbackCheck(array, callback);
     for (let i = 0; i < array.length; i++) {
@@ -23,7 +23,7 @@ export function forEach(array, callback) {
 }
 
 //Works like the every method in the Array prototype
-export function every(array, callback) {
+function every(array, callback) {
     //Check the that the first argument is an array and the second argument is a callback function.
     arrayAndCallbackCheck(array, callback);
     let done = true;
@@ -34,7 +34,7 @@ export function every(array, callback) {
 }
 
 //Works like the some method in the Array prototype
-export function some(array, callback) {
+function some(array, callback) {
     //Check the that the first argument is an array and the second argument is a callback function.
     arrayAndCallbackCheck(array, callback);
     let done = false;
@@ -45,7 +45,7 @@ export function some(array, callback) {
 }
 
 //Works like the map method in the Array prototype
-export function map(array, callback) {
+function map(array, callback) {
     //Check the that the first argument is an array and the second argument is a callback function.
     arrayAndCallbackCheck(array, callback);
     let mappedArray = [];
@@ -56,7 +56,7 @@ export function map(array, callback) {
 }
 
 //Works like the filter method in the Array prototype
-export function filter(array, callback) {
+function filter(array, callback) {
     //Check the that the first argument is an array and the second argument is a callback function.
     arrayAndCallbackCheck(array, callback);
     let filteredArray = [];
@@ -67,7 +67,7 @@ export function filter(array, callback) {
 }
 
 //Works like the reduce method in the Array prototype
-export function reduce(array, callback, initialValue) {
+function reduce(array, callback, initialValue) {
     //Check the that the first argument is an array and the second argument is a callback function.
     arrayAndCallbackCheck(array, callback);
 
@@ -92,7 +92,7 @@ export function reduce(array, callback, initialValue) {
 }
 
 //Works like the find method in the Array prototype
-export function find(array, callback) {
+function find(array, callback) {
     //Check the that the first argument is an array and the second argument is a callback function.
     arrayAndCallbackCheck(array, callback);
     for (let i = 0; i < array.length; i++) {
@@ -101,3 +101,5 @@ export function find(array, callback) {
         }
     }
 }
+
+export { forEach, some, every, map, filter, reduce, find }
