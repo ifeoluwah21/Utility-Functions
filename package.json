@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/ifeoluwah21/Utility-Functions#readme",
   "devDependencies": {
-    "vitest": "^0.22.1"
+    "vitest": "^0.9.4"
   }
 }
